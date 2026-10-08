@@ -1,8 +1,13 @@
 import pg from "pg";
 import dotenv from "dotenv";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-dotenv.config({ path: "../.env" });
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+dotenv.config({
+  path: path.resolve(__dirname, "../../../.env"),
+});
 const { Pool } = pg;
 
 const pool = new Pool({

@@ -1,7 +1,7 @@
 import app from "./app.js";
 import pool from "./config/database.js";
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 try {
   await pool.query("SELECT NOW()");
