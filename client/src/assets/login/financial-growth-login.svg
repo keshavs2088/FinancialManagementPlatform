@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 370" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">Finlume financial growth illustration</title><desc id="desc">A luminous teal line trends upwards with four highlighted data points.</desc>
+<defs>
+<linearGradient id="growthFill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#12DCD7" stop-opacity=".28"/><stop offset="1" stop-color="#12DCD7" stop-opacity="0"/></linearGradient>
+<linearGradient id="growthStroke" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#14C5D2" stop-opacity=".25"/><stop offset=".4" stop-color="#16E5DE"/><stop offset="1" stop-color="#66FFF1"/></linearGradient>
+<filter id="glow" x="-30%" y="-100%" width="160%" height="300%"><feGaussianBlur stdDeviation="8"/></filter>
+<filter id="nodeGlow" x="-150%" y="-150%" width="400%" height="400%"><feGaussianBlur stdDeviation="7"/></filter>
+</defs>
+<path d="M20 330 C90 326 115 280 175 280 S245 312 310 250 S380 230 425 230 S505 258 565 175 S650 165 705 155 S805 65 870 45 L870 370 L20 370Z" fill="url(#growthFill)"/>
+<path id="line" d="M20 330 C90 326 115 280 175 280 S245 312 310 250 S380 230 425 230 S505 258 565 175 S650 165 705 155 S805 65 870 45" stroke="#0AECE5" stroke-width="13" opacity=".34" filter="url(#glow)" stroke-linecap="round"/>
+<path d="M20 330 C90 326 115 280 175 280 S245 312 310 250 S380 230 425 230 S505 258 565 175 S650 165 705 155 S805 65 870 45" stroke="url(#growthStroke)" stroke-width="5" stroke-linecap="round"/>
+<g fill="#5FFFF1"><circle cx="175" cy="280" r="14" opacity=".7" filter="url(#nodeGlow)"/><circle cx="310" cy="250" r="14" opacity=".7" filter="url(#nodeGlow)"/><circle cx="565" cy="175" r="14" opacity=".7" filter="url(#nodeGlow)"/><circle cx="705" cy="155" r="14" opacity=".7" filter="url(#nodeGlow)"/><circle cx="870" cy="45" r="21" opacity=".9" filter="url(#nodeGlow)"/></g>
+<g fill="#62FFF1" stroke="#C9FFFC" stroke-width="2"><circle cx="175" cy="280" r="7"/><circle cx="310" cy="250" r="7"/><circle cx="565" cy="175" r="7"/><circle cx="705" cy="155" r="7"/><circle cx="870" cy="45" r="10" fill="#E7FFFE"/></g>
+</svg>

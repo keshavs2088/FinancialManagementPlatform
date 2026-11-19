@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 150" role="img" aria-labelledby="title desc">
+<title id="title">Finlume logo</title><desc id="desc">Three ascending teal bars embraced by a rising swoosh, followed by the Finlume wordmark.</desc>
+<g fill="#12DCD7"><rect x="39" y="74" width="24" height="43" rx="7"/><rect x="70" y="51" width="24" height="66" rx="7"/><rect x="101" y="24" width="24" height="93" rx="7"/></g>
+<path d="M26 107 C10 130 37 141 77 133 C119 125 149 99 151 74 C154 95 143 115 118 132 C87 153 37 155 20 135 C12 126 15 116 26 107Z" fill="#12DCD7"/>
+<text x="170" y="116" font-family="Inter,Arial,Helvetica,sans-serif" font-size="93" font-weight="750" letter-spacing="-4"><tspan fill="#FFFFFF">Fin</tspan><tspan fill="#12DCD7">lume</tspan></text>
+</svg>

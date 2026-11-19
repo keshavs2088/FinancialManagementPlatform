@@ -1,0 +1,236 @@
+.login-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+.login-branding-section {
+  background-color: var(--color-navy);
+  background-image: url("../../assets/login/DecorativeWave3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 130%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.finlume-logo {
+  width: 90%;
+  padding-left: 3rem;
+}
+
+.login-branding-section p {
+  color: white;
+  text-align: center;
+  font-size: 1.8vw;
+  letter-spacing: 0.1em;
+  padding-bottom: 1rem;
+  border-bottom: 5px solid teal;
+}
+
+.growth-illustration {
+  width: 70%;
+}
+
+.login-form-section {
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-section h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.login-form-section p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 550;
+  color: rgb(113, 112, 112);
+}
+
+.login-form {
+  width: 60%;
+  max-width: 520px;
+}
+
+.email,
+.password {
+  font-weight: bold;
+}
+
+/* showing the icons in the input fields */
+.input-wrapper {
+  position: relative;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.input-wrapper input:focus-visible {
+  outline: 2px solid teal;
+  outline-offset: 2px;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 8px 70px 8px 44px;
+  border: 1px solid #9d9d9d;
+  border-radius: 10px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: 0;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+/*  */
+
+.remember-me-section {
+  display: flex;
+}
+
+.remember-me-section > * {
+  flex: 1;
+}
+
+.secondary_button {
+  color: teal;
+  font-weight: 600;
+  background-color: transparent;
+  border: 0;
+  text-align: right;
+}
+
+.remember_me {
+  font-weight: 500;
+  color: rgb(149, 148, 148);
+  border-right: 1px solid #9d9d9d;
+}
+
+.log-in {
+  background-color: teal;
+  color: aliceblue;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 0;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+
+.new-user {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid #9d9d9d;
+  padding-top: 1rem;
+}
+.new-user p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.secondary_button {
+  cursor: pointer;
+}
+
+.log-in:hover {
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+
+.log-in:focus-visible,
+.secondary_button:focus-visible,
+.password-toggle:focus-visible {
+  outline: 2px solid teal;
+  outline-offset: 3px;
+}
+
+@media (min-width: 701px) and (max-width: 980px) {
+  .login-form-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .login-form-section > p {
+    font-size: 1rem;
+  }
+
+  .login-form {
+    width: 85%;
+  }
+}
+
+@media (max-width: 700px) {
+  .login-page {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-navy);
+  }
+
+  .login-branding-section p {
+    font-size: 100%;
+    width: 50%;
+    padding-bottom: 0.5rem;
+  }
+
+  .finlume-logo {
+    width: 85%;
+    padding-top: 1.5rem;
+  }
+
+  .growth-illustration {
+    width: 55%;
+  }
+
+  .login-branding-section {
+    background-size: 100% 130%;
+  }
+
+  .login-form-section {
+    padding-top: 2rem;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    flex-grow: 1;
+  }
+
+  .login-form-section h1 {
+    font-size: 250%;
+  }
+
+  .login-form-section > p {
+    font-size: 100%;
+  }
+
+  .login-form {
+    width: 85%;
+    padding-bottom: 3rem;
+  }
+
+  .secondary_button {
+    font-size: 90%;
+  }
+
+  .new-user p {
+    font-size: 0.8rem;
+    padding-top: 0.2rem;
+    margin: 0;
+  }
+}
