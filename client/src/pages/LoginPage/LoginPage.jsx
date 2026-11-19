@@ -3,7 +3,7 @@ import finLumeLogo from "../../assets/finlume-logo.svg";
 import growthIllustration from "../../assets/login/financial-growth-login.svg";
 import envelopeImageEmail from "../../assets/login/envelopeEmail.png";
 import lockImagePassword from "../../assets/login/lockPassword.png";
-import { Eye } from "lucide-react"; // later add EyeOff for eye icon with a slash on it
+import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
@@ -43,17 +43,21 @@ function LoginPage() {
             <img src={lockImagePassword} alt="" className="input-icon" />
             <input
               id="password"
-              type="password"
+              type={showPassword ? "text" : "password"}
               placeholder="Enter your password"
               required
             />
             <button
               type="button"
               className="password-toggle"
-              aria-label="Show password"
+              aria-label={showPassword ? "Hide password" : "Show password"}
+              onClick={() => setShowPassword(!showPassword)}
             >
-              <Eye size={20} color="grey" />
-              {/* <EyeOff size={20} color="grey" /> */}
+              {showPassword ? (
+                <Eye size={20} color="grey" />
+              ) : (
+                <EyeOff size={20} color="grey" />
+              )}
             </button>
           </div>
           <div className="remember-me-section">
